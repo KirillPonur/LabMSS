@@ -1,0 +1,60 @@
+\documentclass[tikz]{standalone}
+
+\usepackage[english,russian]{babel}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\input{tikz.tex} 
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+\usepackage
+    {
+        tikz,
+        pgfplots,
+        verbatim,
+        bm
+    }
+\usetikzlibrary
+    {
+        arrows,
+        patterns,
+        angles,
+        quotes,
+        arrows.meta,
+        arrows.spaced,
+        calc, 
+        3d,  
+        fit,
+        backgrounds, 
+        positioning
+    }
+\usetikzlibrary{fadings,through}
+\tikzset
+    {
+        media/.style={font={\footnotesize\sffamily}},
+        wave/.style={
+            decorate,decoration={snake,post length=1.4mm,amplitude=2mm,
+                segment length=1mm},thick},   
+    }
+\tikzset{
+  pics/carc/.style args={#1:#2:#3}{
+    code={
+      \draw[pic actions] (#1:#3) arc(#1:#2:#3);
+    }
+  }
+}
+
+\input{disp}
+\begin{document}
+\begin{tikzpicture}
+
+\draw (0,0) circle (0.8) node[below=0.9] {165 Гц};
+
+\draw (3,0) circle (0.8) node[below=0.9] {567 Гц};
+\draw (3,0) circle (0.4);
+
+\draw (6,0) circle (0.8) node[below=0.9] {1225 Гц};
+\draw (6,0) circle (0.244);
+\draw (6,0) circle (0.488);
+% \draw (6,0) node {?};
+
+\end{tikzpicture} 
+\end{document}
