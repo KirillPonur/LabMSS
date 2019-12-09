@@ -5,8 +5,8 @@
  
 Работу выполнили студенты 4-го курса фундаментальной радиофизики радиофизического факультета:
 
-- Платонова М.В.
-- [Сарафанов Ф.Г.](https://github.com/FedorSarafanov)
+- [Анна Карусевич](https://github.com/AnnaKarusivich)
+- [Кирилл Понур](https://github.com/KirillPonur)
 
 
 **Disclaimer:**

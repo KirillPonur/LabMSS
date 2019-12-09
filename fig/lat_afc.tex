@@ -105,18 +105,7 @@
 	     % \xdef\C{5e-8}
 	     % \xdef\R{13000}
 
-		\addplot +[mark=*, line width=1pt, mark size=1.2pt, solid,draw=darkblue] plot [error bars/.cd, y dir = both, y explicit,x dir = both, x explicit] table [ x=f_Hz, y=U_mV] {../data/aluminium.tsv};
-		% \addlegendentry{$U_c=10$ В}
-		% \addplot +[mark=*, line width=0.4pt, mark size=0.4pt, solid,violet] plot [error bars/.cd, y dir = both, y explicit,x dir = both, x explicit] table [ x=uz, y=ic, y error=di, x error=du] {../data/ex2.tsv};
-		% \addlegendentry{$U_c=2\hphantom{0}$ В}
-
-		% \addplot +[mark=*, line width=0.4pt, mark size=0.4pt, solid,ochre] plot [error bars/.cd, y dir = both, y explicit,x dir = both, x explicit] table [ x=uz, y=ic, y error=di, x error=du] {../data/ex1.tsv};
-		% \addlegendentry{$U_c=0.5$ В}
-		% \addplot +[mark=square*, line width=1.2pt, mark size=3pt, solid,red] plot [error bars/.cd, y dir = both, y explicit] table [ x=ip, y=id, ] {../data/5a2.tsv};\addlegendentry{$U_\text{рез}=120$ В}
-		% \addplot +[mark=triangle*, line width=1.2pt, mark size=3pt, solid,magenta] plot [error bars/.cd, y dir = both, y explicit] table [ x=ip, y=id, ] {../data/5a3.tsv};\addlegendentry{$U_\text{рез}=\hphantom{1}90$ В}
-		% \addplot[color=red,samples=10, domain=-2:0]{2.54*(x+1.7)}; 10v
-		% \addplot[color=blue,samples=10, domain=-2:0]{8.52*(x+1.33)}; 2v
-		% \addplot[color=ochre,samples=10, domain=-2:0]{10.36*(x+1.26)}; 0.5v
-		    \end{axis}
+		\addplot +[mark=*, line width=1pt, mark size=1.2pt, solid,draw=darkblue] plot [error bars/.cd, y dir = both, y explicit,x dir = both, x explicit] table [ x=f_Hz, y=U_mV] {../data/lat.tsv};
+		\end{axis}
 		\end{tikzpicture}	
 \end{document}

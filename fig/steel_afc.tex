@@ -7,7 +7,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
-
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
 \usepackage{pgfplotstable}
 \input{colors}
 % ochre lightorange lightyellow lightgreen osci sky violet 
@@ -105,7 +105,7 @@
 	     % \xdef\C{5e-8}
 	     % \xdef\R{13000}
 
-		\addplot +[mark=*, line width=1pt, mark size=1.2pt, solid,draw=lightorange] plot [error bars/.cd, y dir = both, y explicit,x dir = both, x explicit] table [ x=f_Hz, y=U_mV] {../data/steel.tsv};
+		\addplot +[mark=*, line width=1pt, mark size=1.2pt, solid,draw=darkblue] plot [error bars/.cd, y dir = both, y explicit,x dir = both, x explicit] table [ x=f_Hz, y=U_mV] {../data/steel.tsv};
 		% \addlegendentry{$U_c=10$ В}
 		% \addplot +[mark=*, line width=0.4pt, mark size=0.4pt, solid,violet] plot [error bars/.cd, y dir = both, y explicit,x dir = both, x explicit] table [ x=uz, y=ic, y error=di, x error=du] {../data/ex2.tsv};
 		% \addlegendentry{$U_c=2\hphantom{0}$ В}
