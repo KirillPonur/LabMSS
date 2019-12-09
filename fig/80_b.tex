@@ -46,12 +46,25 @@
 \begin{document}
 \begin{tikzpicture}
 
-\draw (0,0) circle (0.8) node[below=0.9] {272 Гц};
 
-\draw (3,0) circle (0.8) node[below=0.9] {958 Гц};
-\draw (3,0) circle (0.4);
-% \draw (3,-0.8) -- ++(0,1.6);
+\draw (3,0) circle (0.8) node[below=0.9] {453 Гц};
+\draw (3,0) -- ++(0:0.8);
+\draw (3,0) -- ++(180:0.8);
+
+\draw (6,0) circle (0.8) node[below=0.9] {665 Гц};
+\draw (6,0) -- ++(0:0.8);
+\draw (6,0) -- ++(180:0.8);
+
+\draw (6,0) -- ++(90:0.8);
+\draw (6,0) -- ++(-90:0.8);
 
 
+\draw (9,0) circle (0.8) node[below=0.9] {909 Гц};
+\draw (9,0) -- ++(60:0.8);
+\draw (9,0) -- ++(120:0.8);
+\draw (9,0) -- ++(180:0.8);
+\draw (9,0) -- ++(240:0.8);
+\draw (9,0) -- ++(300:0.8);
+\draw (9,0) -- ++(360:0.8);
 \end{tikzpicture} 
 \end{document}

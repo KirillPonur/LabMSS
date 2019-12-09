@@ -58,6 +58,30 @@
 \newpage
 
 \section{Резонансные кривые продольных колебаний}
+\subsection{Стальной стержень}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.5]{fig/steel_afc.pdf}
+	\vspace{-1em}
+	\caption{Семейство переходных характеристик}
+	\label{fig:2}
+\end{figure}
+Из графика снятой АЧХ нашли параметры резонансной кривой: резонансную частоту
+$f_0=6610\text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} = 0.48\text{ Гц}$. 
+Частота хорошо согласуется с теоретическим значением первой моды
+\begin{equation}
+	f_1 = \frac{1\cdot c}{2l} = \frac{5210 \text{ м}\cdot\text{с}^{-1}}{2\cdot 0.394\text{ м}}=6611 \text{ Гц}
+\end{equation}
+Добротность колебательной системы
+\begin{equation}
+	Q = \frac{f_0}{\Delta f_{0.7}} \approx 13770
+\end{equation}
+Исходя из табличного значения модуля Юнга для стали $E=0.20\cdot10^{12}$ Па, нашли вязкость стержня  \cite[стр. 10]{met}:
+\begin{equation}
+	\eta = \frac{\gamma E}{\omega_0} = \frac{ E}{Q 2\pi f_0} = \frac{\Delta f_{0.7} E}{2\pi f_0^2} = 340 \text{ кг}\cdot\text{м}^{-1}\cdot\text{с}^{-1}
+\end{equation}
+
 \subsection{Алюминиевый стержень}
 \begin{figure}[H]
 	\centering
@@ -74,13 +98,12 @@ $f_0=6458.6\text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} \
 \end{equation}
 Добротность колебательной системы
 \begin{equation}
-	Q = \frac{f_0}{\Delta f_{0.7}} \approx 6450
+	Q = \frac{f_0}{\Delta f_{0.7}} \approx 6522
 \end{equation}
 Исходя из табличного значения модуля Юнга для алюминия $E=0.07\cdot10^{12}$ Па, нашли вязкость стержня  \cite[стр. 10]{met}:
 \begin{equation}
 	\eta = \frac{\gamma E}{\omega_0}= \frac{ E}{Q 2\pi f_0} = \frac{\Delta f_{0.7} E}{2\pi f_0^2}= 270 \text{ кг}\cdot\text{м}^{-1}\cdot\text{с}^{-1}
 \end{equation}
-
 \subsection{Латунный стержень}
 \begin{figure}[H]
 	\centering
@@ -90,19 +113,20 @@ $f_0=6458.6\text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} \
 \end{figure}
 
 Из графика снятой АЧХ нашли параметры резонансной кривой: резонансную частоту
-$f_0=6458.6\text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} \approx 1\text{ Гц}$. 
+$f_0=3497.5 \text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} \approx 0.4\text{ Гц}$. 
 Частота согласуется с теоретическим значением первой моды
 \begin{equation}
-	f_1 = \frac{1\cdot c}{2l} = \frac{5140 \text{ м}\cdot\text{с}^{-1}}{2\cdot 0.394\text{ м}}=6522 \text{ Гц}
+	f_1 = \frac{1\cdot c}{2l} = \frac{2830 \text{ м}\cdot\text{с}^{-1}}{2\cdot 0.394\text{ м}}=3591 \text{ Гц}
 \end{equation}
 Добротность колебательной системы
 \begin{equation}
-	Q = \frac{f_0}{\Delta f_{0.7}} \approx 6450
+	Q = \frac{f_0}{\Delta f_{0.7}} \approx 8743
 \end{equation}
-Исходя из табличного значения модуля Юнга для алюминия $E=0.07\cdot10^{12}$ Па, нашли вязкость стержня  \cite[стр. 10]{met}:
+Исходя из табличного значения модуля Юнга для алюминия $E=0.071\cdot10^{12}$ Па, нашли вязкость стержня  \cite[стр. 10]{met}:
 \begin{equation}
-	\eta = \frac{\gamma E}{\omega_0}= \frac{ E}{Q 2\pi f_0} = \frac{\Delta f_{0.7} E}{2\pi f_0^2}= 270 \text{ кг}\cdot\text{м}^{-1}\cdot\text{с}^{-1}
+	\eta = \frac{\gamma E}{\omega_0}= \frac{ E}{Q 2\pi f_0} = \frac{\Delta f_{0.7} E}{2\pi f_0^2}= 369 \text{ кг}\cdot\text{м}^{-1}\cdot\text{с}^{-1}
 \end{equation}
+
 
 \subsection{Стержень из оргстекла}
 
@@ -129,29 +153,7 @@ $f_0=2420\text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} = 9
 \end{equation}
 
 
-\subsection{Стальной стержень}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=1.5]{fig/steel_afc.pdf}
-	\vspace{-1em}
-	\caption{Семейство переходных характеристик}
-	\label{fig:2}
-\end{figure}
-Из графика снятой АЧХ нашли параметры резонансной кривой: резонансную частоту
-$f_0=6610\text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} = 0.48\text{ Гц}$. 
-Частота хорошо согласуется с теоретическим значением первой моды
-\begin{equation}
-	f_1 = \frac{1\cdot c}{2l} = \frac{5210 \text{ м}\cdot\text{с}^{-1}}{2\cdot 0.394\text{ м}}=6611 \text{ Гц}
-\end{equation}
-Добротность колебательной системы
-\begin{equation}
-	Q = \frac{f_0}{\Delta f_{0.7}} \approx 13770
-\end{equation}
-Исходя из табличного значения модуля Юнга для стали $E=0.20\cdot10^{12}$ Па, нашли вязкость стержня  \cite[стр. 10]{met}:
-\begin{equation}
-	\eta = \frac{\gamma E}{\omega_0} = \frac{ E}{Q 2\pi f_0} = \frac{\Delta f_{0.7} E}{2\pi f_0^2} = 340 \text{ кг}\cdot\text{м}^{-1}\cdot\text{с}^{-1}
-\end{equation}
 
 \newpage
 \subsection{Экспериментальное значение модуля Юнга}
@@ -163,6 +165,7 @@ $f_0=6610\text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} = 0
 	\begin{aligned}
 		5089 \text{ м}\cdot\text{с}^{-1},&\quad \text{алюминий}\\
 		1097 \text{ м}\cdot\text{с}^{-1},&\quad \text{оргстекло}\\
+		2756 \text{ м}\cdot\text{с}^{-1},&\quad \text{латунь}\\
 		5208 \text{ м}\cdot\text{с}^{-1},&\quad \text{сталь}
 	\end{aligned}
 	\right.
@@ -174,6 +177,7 @@ $f_0=6610\text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} = 0
 	\begin{aligned}
 		0.069\cdot 10^{12}\text{ Па},&\quad \text{алюминий}\\
 		0.0014\cdot 10^{12}\text{ Па},&\quad \text{оргстекло}\\
+		0.0006\cdot 10^{12}\text{ Па},&\quad \text{латунь}\\
 		0.211\cdot 10^{12}\text{ Па},&\quad \text{сталь}
 	\end{aligned}
 	\right.
@@ -202,6 +206,18 @@ $f_0=6610\text{ Гц}$ и ширину на уровне 0.7 $\Delta f_{0.7} = 0
 	\centering
 	\includegraphics[scale=1.5]{fig/63_b.pdf}
 \end{figure}
+\subsection{Пластина 0.80 мм}
+\subsubsection{Излучатель в центре}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.5]{fig/80_c.pdf}
+\end{figure}
+\subsubsection{Излучатель смещен}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.5]{fig/80_b.pdf}
+\end{figure}
+
 \subsection{Пластина 1.16 мм}
 \subsubsection{Излучатель в центре}
 \begin{figure}[H]

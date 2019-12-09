@@ -5,7 +5,7 @@ def frexp10(decimal):
 	return float(parts[0]), int(parts[1])
 
 =>PYTHONTEX:SETTINGS#
-version=0.17dev
+version=0.17
 outputdir=pythontex-files-lab
 workingdir=.
 workingdirset=false
@@ -23,9 +23,9 @@ fvextfile=-1
 pyconbanner=none
 pyconfilename=stdin
 depythontex=false
-pygfamily=py|python|
+pygfamily=py|python3|
 pygfamily=pycon|pycon|
-pygfamily=sympy|python|
+pygfamily=sympy|python3|
 pygfamily=sympycon|pycon|
-pygfamily=pylab|python|
+pygfamily=pylab|python3|
 pygfamily=pylabcon|pycon|
